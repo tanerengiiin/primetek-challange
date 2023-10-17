@@ -10,7 +10,7 @@ const Sidebar = () => {
     const [activeBtn, setActiveBtn] = useState("Dashboard")
     const { sidebarOpen, setSidebarOpen } = useSidebarContext()
     return (
-        <div className={`sidebar ${!!sidebarOpen && "sidebarOpen"}`}>
+        <div className={`full-height sidebar ${!!sidebarOpen && "sidebarOpen"}`}>
             
             <div id='logo'>
                 <svg width="107" height="32" viewBox="0 0 107 32" fill="none" xmlns="http://www.w3.org/2000/svg">

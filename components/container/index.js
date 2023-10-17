@@ -7,7 +7,7 @@ import { useSidebarContext } from '@/contexts/SidebarContext'
 const Container = () => {
     const {sidebarOpen,setSidebarOpen}=useSidebarContext()
     return (
-        <div id='container'>
+        <div id='container' className='full-height'>
             <Sidebar/>
             <Content/>
             {!!sidebarOpen&&<div className='sidebarOverlay' onClick={()=>setSidebarOpen(false)}>

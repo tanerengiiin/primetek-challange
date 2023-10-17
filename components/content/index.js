@@ -6,7 +6,7 @@ import ContentBody from "./ContentBody"
 const Content = () => {
 
     return (
-        <div id='content'>
+        <div id='content' className='full-height'>
             <Topbar/>
             <ContentBody/>
         </div>

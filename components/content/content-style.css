@@ -1,11 +1,8 @@
 #content {
-  height: 100dvh;
+  height: 100vh;
   position: relative;
   overflow-y: auto;
   flex: 1;
-  @media (max-height: 1px) {
-    height: 100vh;
-  }
 }
 
 #contentTopbar {
@@ -54,14 +51,14 @@
   align-items: center;
   gap: 28px;
 }
-.contentTopbar__icon{
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contentTopbar__icon {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.contentTopbar__icon svg{
+.contentTopbar__icon svg {
   cursor: pointer;
 }
 .contentTopbar__icon svg path {
