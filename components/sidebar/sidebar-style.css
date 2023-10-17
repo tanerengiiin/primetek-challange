@@ -2,6 +2,7 @@
   width: 280px;
   border-right: 1px solid var(--surface-300);
   height: 100dvh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 14px;

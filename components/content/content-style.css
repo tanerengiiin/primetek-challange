@@ -1,5 +1,6 @@
 #content {
   height: 100dvh;
+  height: 100vh;
   position: relative;
   overflow-y: auto;
   flex: 1;
