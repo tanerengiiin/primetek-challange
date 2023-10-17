@@ -8,6 +8,7 @@
 #contentTopbar {
   padding: 14px 28px;
   display: flex;
+  align-items: center;
   gap: 56px;
   border-bottom: 1px solid var(--surface-300);
   position: sticky;
