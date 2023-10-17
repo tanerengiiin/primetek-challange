@@ -1,0 +1,140 @@
+.sidebar {
+  width: 280px;
+  border-right: 1px solid var(--surface-300);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: all 0.2s ease;
+  background-color: var(--surface-0);
+  z-index: 50;
+}
+#application {
+  flex: 1;
+}
+#logo {
+  padding: 14px 28px;
+}
+.items {
+  padding: 14px 0 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.heading {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  align-self: stretch;
+  padding: 7px;
+  color: var(--surface-600);
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 7px;
+  width: 100%;
+  position: relative;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.item.active {
+  padding: 7px 14px;
+  border-radius: 6px 0px 0px 6px;
+  background: #fff;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.item.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -2px;
+  width: 2px;
+  height: 100%;
+  border-radius: 0px 6px 6px 0px;
+  background: #2196f3;
+  z-index: 5;
+  transition: all 0.2s ease;
+}
+.item .item__icon svg path {
+  fill: var(--surface-600);
+}
+.item.active .item__icon svg path {
+  fill: var(--blue-500);
+}
+.item .item__name {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  color: var(--surface-800);
+  flex: 1;
+  text-align: left;
+}
+.item.active .item__name {
+  color: var(--surface-900);
+}
+.item .item__badge {
+  display: flex;
+  width: 21px;
+  height: 21px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  background: var(--blue-500);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  color: var(--surface-0);
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 14px;
+}
+.seperator {
+  height: 1px;
+  align-self: stretch;
+  background: var(--surface-300);
+}
+
+.item__avatar {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border-radius: 28px;
+}
+.item__avatar img {
+  border-radius: 28px;
+  object-fit: cover;
+}
+.sidebarOverlay {
+  display: none;
+  transition: all 0.1s ease;
+  position: fixed;
+  inset: 0;
+  z-index: 15;
+}
+@media screen and (max-width: 900px) {
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: -280px;
+    z-index: 100;
+  }
+  .sidebar.sidebarOpen {
+    left: 0;
+  }
+  .sidebarOverlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+
+    backdrop-filter: blur(2px);
+  }
+}
