@@ -51,8 +51,14 @@
   align-items: center;
   gap: 28px;
 }
-
-.contentTopbar__icon {
+.contentTopbar__icon{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contentTopbar__icon svg{
   cursor: pointer;
 }
 .contentTopbar__icon svg path {
