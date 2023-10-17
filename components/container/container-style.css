@@ -1,8 +1,10 @@
-#container{
-    width: 100vw;
-    height: 100dvh;
+#container {
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  align-items: start;
+  @media (max-height: 1px) {
     height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: start;
+  }
 }
