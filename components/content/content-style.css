@@ -41,8 +41,11 @@
   height: 100%;
   flex: 1;
   outline: none;
+  color: var(--surface-900);
 }
-
+#contentTopbar__search--input input::placeholder {
+  color: var(--surface-500);
+}
 #contentTopbar__right {
   display: flex;
   align-items: center;

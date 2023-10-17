@@ -1,7 +1,8 @@
 .sidebar {
   width: 280px;
   border-right: 1px solid var(--surface-300);
-  height: 100vh;
+  height: calc(100vh - env(safe-area-inset-top));
+  height: calc(100vh - constant(safe-area-inset-top));
   display: flex;
   flex-direction: column;
   gap: 14px;
