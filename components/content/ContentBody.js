@@ -54,7 +54,7 @@ const ContentBody = () => {
       </div>
       <div id='contentBody__showroom'>
         {showroomData.map((data, i) => (
-          <div className='card'>
+          <div key={data.id} className='card'>
             <div className='contentBody__showroom--image'>
               <Image src={data.productUrl} alt={data.name} fill />
               <div className='contentBody__showroom--labelOverlay'>
